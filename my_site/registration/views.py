@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .forms import ClientForm
 
 
-def landing(request):
+def registration(request):
     form = ClientForm(request.POST or None)
 
     if request.method == "POST" and form.is_valid():
