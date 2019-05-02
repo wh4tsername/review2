@@ -4,12 +4,20 @@ html, body{
     font-family: 'Roboto', sans-serif;
 }
 
+.wrapper{
+    background: url('img/bg_image.jpg');
+    min-height: 100%;
+}
+
+.wrapper-content{
+    overflow: auto;
+}
+
 .top-container{
-    padding-top: 10%;
+    padding-top: 3%;
 }
 
 .general-container{
-    background: url('img/bg_image.jpg');
     height: 100%;
 }
 

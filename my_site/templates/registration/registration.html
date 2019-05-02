@@ -1,24 +1,11 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+{% extends 'base.html' %}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400" rel="stylesheet">
-
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-
-</head>
-<body>
+{% block content %}
     <div class="general-container">
         <div class="container top-container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h1 class="title">Registration</h1>
+                    <h1 class="title">Registration form</h1>
                     <div>
                         <form action="" method="post" class="text-center">{% csrf_token %}
                          <div class="form-group">
@@ -47,11 +34,9 @@
                          </div>
                          <button type="submit" class="btn btn-primary btn-orange">Submit</button>
                         </form>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}
