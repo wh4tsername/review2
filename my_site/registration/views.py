@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from .forms import SubscriberForm
+from .forms import ClientForm
 
 
 def landing(request):
-    form = SubscriberForm(request.POST or None)
+    form = ClientForm(request.POST or None)
 
     if request.method == "POST" and form.is_valid():
         new_form = form.save()
 
-    return render(request, 'landing/landing.html', locals())
+    return render(request, 'registration/registration.html', locals())
