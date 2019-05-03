@@ -1,3 +1,4 @@
 # Ignore files and folders
 
 \.idea/
+\__pycache__
