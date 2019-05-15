@@ -21,4 +21,3 @@ def about(request):
 
 def contact(request):
     return render(request, 'registration/contact.html', locals())
-
