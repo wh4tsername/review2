@@ -21,3 +21,7 @@ def about(request):
 
 def contact(request):
     return render(request, 'registration/contact.html', locals())
+
+
+def cabinet(request):
+    return render(request, 'registration/cabinet.html', locals())
