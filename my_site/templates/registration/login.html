@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="general-container">
+        <div class="container top-container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div>
+                        <form action="" method="post" class="form-inline text-center">
+                            {% csrf_token %}
+                         <div class="form-group">
+                             <label>&nbsp;Username:&nbsp;&nbsp;</label>
+                             {{ form.username }}
+                         </div>
+                         <div class="form-group">
+                             <label>&nbsp;Password:&nbsp;&nbsp;</label>
+                             {{ form.password }}
+                         </div>
+                            <button type="submit" class="btn btn-primary btn-orange" value="login">Log in</button>
+                            <input type="hidden" name="next" value="{{ next }}">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="general-container">
+        <div class="container top-container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 class="title">Registration form</h1>
+                    <div>
+                        <form action="" method="post">{% csrf_token %}
+                         <div class="form-group form-inline">
+                             <label>Surname: </label>
+                             <input name="{{ form.surname.name }}" class="form-control registration-input">
+                         </div>
+                         <div class="form-group form-inline">
+                             <label>Name: </label>
+                             <input name="{{ form.name.name }}" class="form-control registration-input">
+                         </div>
+                            <div class="form-group form-inline">
+                             <label>Patronymic: </label>
+                             <input name="{{ form.patronymic.name }}" class="form-control registration-input">
+                         </div>
+                         <div class="form-group form-inline">
+                             <label>Passport: </label>
+                             <input name="{{ form.passport.name }}" class="form-control registration-input">
+                         </div>
+                         <div class="form-group form-inline">
+                             <label>Phone number: </label>
+                             <input name="{{ form.phone_number.name }}" class="form-control registration-input">
+                         </div>
+                         <div class="form-group form-inline">
+                             <label>Place of residence: </label>
+                             <input name="{{ form.place_of_residence.name }}" class="form-control registration-input">
+                         </div>
+                         <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-orange">Register</button>
+                         </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
