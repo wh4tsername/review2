@@ -1,3 +1,0 @@
-login: wasd
-email: pominov.denis@mail.ru
-password: 291928182717a
